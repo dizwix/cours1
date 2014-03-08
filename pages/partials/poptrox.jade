@@ -1,0 +1,7 @@
+#poptrox
+  ul#gallery
+    -each item, index in ['01', '02', '03', '04', '02', '01', '04', '03']
+      li
+        img(id='mini#{index + 1}', src='images/img#{item}.jpg', title='Texte de bulle', data-src='images/img#{item}_big.jpg', alt='')
+  img#zoom(src='images/img01_big.jpg')
+  br.clear
